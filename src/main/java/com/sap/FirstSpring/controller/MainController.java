@@ -14,6 +14,6 @@ public class MainController {
 
     @RequestMapping("/myself")
     public String myName() {
-        return "AmitRaj New Name Test For Jenkins Build";
+        return "Amit_Raj123";
     }
 }
