@@ -14,6 +14,6 @@ public class MainController {
 
     @RequestMapping("/myself")
     public String myName() {
-        return "Amit_Raj123456";
+        return "Amit_Raj1234567";
     }
 }
