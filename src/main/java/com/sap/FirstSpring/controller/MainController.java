@@ -14,6 +14,6 @@ public class MainController {
 
     @RequestMapping("/myself")
     public String myName() {
-        return "zeroX777";
+        return "zeroX649";
     }
 }
