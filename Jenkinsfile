@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'sudo chmod -R 777 .'
                 sh './mvnw compile'
             }
         }
