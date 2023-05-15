@@ -4,18 +4,22 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo chmod -R 777 .'
-                sh './mvnw package'
+                bat "mvn build"
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                bat "mvn test"
+            }
+        }
+        stage('Package') {
+            steps {
+                bat "mvn package"
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo 'deploy'
             }
         }
     }
